@@ -57,7 +57,7 @@ function Profile() {
         <div>
           <div className="content-container">
             <h1>My Profile</h1>
-            <button onClick={handleLogout}>Log Out</button>
+            <button class="btn" onClick={handleLogout}>Log Out</button>
             {userData?.profileImage && <img src={userData.profileImage} alt="Profile Image" className="profilelarge" />}
             <p>Edit profile image: <input type="file" onChange={handleFileChange} style={{ marginTop: '1px' }}/></p>
             <p>My Name: {userData?.name}</p>

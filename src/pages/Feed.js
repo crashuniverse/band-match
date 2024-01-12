@@ -38,9 +38,7 @@ function Feed() {
         return (
         <div>
             <div className="content-container">
-            <h1>
-                {"Venues In My Area"}
-            </h1>
+            <h1>Venues In My Area</h1>
             {documents.map(doc => (
                 <Link to={`/venues/:${doc.venue_name}`} key={doc.venue_name} className="card custom-link">
                 {/* The entire card is now a link */}
@@ -50,7 +48,7 @@ function Feed() {
                 </Link>
             ))}
             <div>Don't see a venue that should be listed?</div>
-            <button onClick={redirectToVenueAdd}>Add a venue</button>
+            <button class="btn" onClick={redirectToVenueAdd}>Add a venue</button>
             </div>
         </div>
         );

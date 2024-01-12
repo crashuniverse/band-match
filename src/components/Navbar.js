@@ -75,7 +75,7 @@ const Navbar = () => {
               </ul>
             )}
         </div>
-        <div style={{ marginLeft: 'auto' }}>  {/* This pushes the subsequent content to the right */}
+        <div>  {/* This pushes the subsequent content to the right */}
           {user ? (
             <>
               {profileImage &&

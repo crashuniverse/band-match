@@ -20,6 +20,7 @@ body {
 }
 
 .navbar {
+  display: flex;
   height: 60px;
   background-color: #4e526e;
   position: relative;
@@ -27,12 +28,11 @@ body {
 }
 
 .profile {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 5px;
     border-radius: 50%; /* Makes the image circular */
+    filter: invert();
 }
 
 .menu-icon {
@@ -48,11 +48,15 @@ body {
   margin-right: 10px;
 }
 
+.navbar-centered h1 {
+  margin: 0;
+  color: white;
+}
+
 .navbar-logo {
   height: 30px; /* Adjust based on your preference */
   margin-right: 10px;
   border-radius: 50%;
-  margin-bottom: 10px;
 }
 
 .link {

@@ -50,7 +50,7 @@ function SignUp() {
           <h2 className={"App-header"}>Create an account</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label for="name">Name of individual/group</label>
+              <label htmlFor="name">Name of individual/group</label>
               <input
                   id="name"
                   type="text"
@@ -60,7 +60,7 @@ function SignUp() {
               />
             </div>
             <div className="form-group">
-              <label for="email">Email address</label>
+              <label htmlFor="email">Email address</label>
               <input
                   id="email"
                   type="text"
@@ -70,7 +70,7 @@ function SignUp() {
               />
             </div>
             <div className="form-group">
-              <label for="password">Password</label>
+              <label htmlFor="password">Password</label>
               <input
                   id="password"
                   type="password"
@@ -101,7 +101,7 @@ function SignUp() {
               <label for="venue">Venue</label>
             </div> */}
             <div className="form-group">
-              <label for="location">Location</label>
+              <label htmlFor="location">Location</label>
               <input
                   id="location"
                   type="text"

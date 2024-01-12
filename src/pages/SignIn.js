@@ -31,29 +31,33 @@ function SignIn() {
         <div className="content-container">
           <h2 className={"App-header"}>Log in</h2>
           <form onSubmit={handleSubmit}>
-            <div>  
+            <div class="form-group">  
+              <label htmlFor="email">Email</label>
               <input
+                  id="email"
                   type="text"
-                  placeholder="Email address"  // TODO: Switch to same format as signup
+                  placeholder="someone@example.com"  // TODO: Switch to same format as signup
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div>
+            <div class="form-group">
+              <label htmlFor="password">Password</label>
               <input
+                  id="password"
                   type="password"
                   placeholder="Password"
                   value={password}  // TODO: Make it so that this is hidden
                   onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button type="submit">Submit</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
           </form>
           {error && 
             <div style={{ backgroundColor: '#ffe6e6', border: '1px solid red', padding: '10px', borderRadius: '4px', marginTop: '10px' }}>
               <span style={{ color: 'red' }}>Invalid email/password combination
               </span>
-              <button onClick={redirectToSignup} style={{ marginLeft: '10px' }}>Create account</button>
+              <button class="btn" onClick={redirectToSignup} style={{ marginLeft: '10px' }}>Create account</button>
             </div>
           }
         </div>
